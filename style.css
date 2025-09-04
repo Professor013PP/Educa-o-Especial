@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b9a6e;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    margin: 3rem 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    color: #3b9a6e;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3b9a6e;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 2rem 0.5rem;
+        padding: 1.5rem;
+    }
+
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+}
