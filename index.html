@@ -1,42 +1,280 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações sobre Necessidades Especiais</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inclusão na Escola e na Sociedade</title>
+  <meta name="description" content="Site educativo sobre inclusão: conceitos, práticas e informações sobre TEA, Deficiência Intelectual, Surdez, Cegueira, Síndrome de Down e TDI." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Inclusão para Todos</h1>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="site-title">Inclusão na Escola e na Sociedade</h1>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#principios">Princípios</a></li>
+          <li><a href="#topicos">Tópicos</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-label="Introdução">
+      <div class="container">
+        <h2>Educação inclusiva é um direito de todos</h2>
+        <p>
+          Este guia apresenta conceitos, orientações práticas e tópicos essenciais sobre
+          <strong>TEA</strong>, <strong>Deficiência Intelectual (DI)</strong>, <strong>Surdez</strong>,
+          <strong>Cegueira</strong>, <strong>Síndrome de Down</strong> e <strong>TDI</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>
+          Inclusão significa remover barreiras para que todas as pessoas possam participar, aprender e
+          conviver com autonomia e dignidade. Na educação, isso envolve <em>acessibilidade</em>, <em>currículo
+          flexível</em>, <em>avaliação justa</em> e <em>atitudes acolhedoras</em>.
+        </p>
+      </div>
+    </section>
+
+    <section id="principios" class="section alt">
+      <div class="container">
+        <h2>Princípios de práticas inclusivas</h2>
+        <ul class="pill-list" role="list">
+          <li>Altas expectativas para todos</li>
+          <li>Adaptações razoáveis</li>
+          <li>Comunicação acessível</li>
+          <li>Participação ativa</li>
+          <li>Colaboração com família e equipe</li>
+          <li>Avaliação contínua e formativa</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="topicos" class="section">
+      <div class="container">
+        <h2>Tópicos: principais deficiências</h2>
+
+        <div class="grid">
+          <!-- TEA -->
+          <article class="card" id="tea" aria-labelledby="tit-tea">
+            <h3 id="tit-tea">TEA — Transtorno do Espectro Autista</h3>
+            <p class="lead">
+              Condição do neurodesenvolvimento com características na comunicação, interação social
+              e padrões de comportamento e interesses.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Rotinas visuais e previsibilidade.</li>
+                <li>Instruções claras e passo a passo.</li>
+                <li>Ambiente com redução de estímulos quando necessário.</li>
+                <li>Interesses do estudante como ponto de partida para engajamento.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Comunicação alternativa/aumentativa (CAA) quando apropriado.</li>
+                <li>Tempo extra para atividades e avaliações.</li>
+                <li>Espaço de autorregulação (calm corner).</li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- DI -->
+          <article class="card" id="di" aria-labelledby="tit-di">
+            <h3 id="tit-di">DI — Deficiência Intelectual</h3>
+            <p class="lead">
+              Envolve limitações no funcionamento intelectual e no comportamento adaptativo,
+              com início no período do desenvolvimento.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Objetivos ensináveis e sequências curtas.</li>
+                <li>Modelagem, prática guiada e feedback frequente.</li>
+                <li>Materiais concretos e exemplos do cotidiano.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Adaptar linguagem e complexidade textual.</li>
+                <li>Avaliações por múltiplos meios (oral, prática, visual).</li>
+                <li>Parceria com AEE e família.</li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Surdez -->
+          <article class="card" id="surdez" aria-labelledby="tit-surdez">
+            <h3 id="tit-surdez">Surdez</h3>
+            <p class="lead">
+              Perda parcial ou total da audição. Pode envolver identidades e culturas surdas
+              e o uso de Libras.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Garantir visibilidade labial e boa iluminação.</li>
+                <li>Uso de Libras e/ou intérprete quando necessário.</li>
+                <li>Fornecer materiais escritos, legendas e quadros visuais.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Legendagem de vídeos e transcrições.</li>
+                <li>Aparelhos/implantes e sistemas FM quando usados pelo estudante.</li>
+                <li>Regras de turno de fala e sinalização visual.</li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Cegueira -->
+          <article class="card" id="cegueira" aria-labelledby="tit-cegueira">
+            <h3 id="tit-cegueira">Cegueira e Baixa Visão</h3>
+            <p class="lead">
+              Perda total ou significativa da visão, podendo requerer braille, tecnologia assistiva
+              e descrições alternativas.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Descrição verbal de imagens, gráficos e demonstrações.</li>
+                <li>Materiais em braille ou ampliados conforme a necessidade.</li>
+                <li>Mapeamento tátil do espaço escolar.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Leitores de tela e teclados acessíveis.</li>
+                <li>Contraste adequado e tipografia legível.</li>
+                <li>Organização espacial consistente.</li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Síndrome de Down -->
+          <article class="card" id="sd" aria-labelledby="tit-sd">
+            <h3 id="tit-sd">Síndrome de Down</h3>
+            <p class="lead">
+              Condição genética associada a características físicas e perfis de aprendizagem
+              diversos; potencial de desenvolvimento é ampliado com estímulos adequados.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Ritmo de aprendizagem respeitado e repetição espaçada.</li>
+                <li>Atividades funcionais e contextualizadas.</li>
+                <li>Foco em comunicação, autonomia e convivência.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Materiais multissensoriais (visuais, táteis, auditivos).</li>
+                <li>Rotinas claras e previsíveis.</li>
+                <li>Parcerias e trabalho por pares.</li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- TDI -->
+          <article class="card" id="tdi" aria-labelledby="tit-tdi">
+            <h3 id="tit-tdi">TDI</h3>
+            <p class="lead">
+              Sigla utilizada em alguns contextos educacionais. Adeque o suporte conforme a avaliação
+              pedagógica e multiprofissional indicada para o estudante.
+            </p>
+            <details>
+              <summary>Estratégias de inclusão</summary>
+              <ul>
+                <li>Plano educacional individualizado (PEI) com metas claras.</li>
+                <li>Mediação intencional e monitoramento contínuo de progresso.</li>
+                <li>Ajustes de tarefa, tempo e forma de resposta.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Acessibilidade e recursos</summary>
+              <ul>
+                <li>Recursos de tecnologia assistiva pertinentes.</li>
+                <li>Registros objetivos de avanços e barreiras.</li>
+                <li>Articulação entre escola, família e serviços especializados.</li>
+              </ul>
+            </details>
+          </article>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#surdez">Surdez</a></li>
-                <li><a href="#tea">Transtorno do Espectro Autista (TEA)</a></li>
-                <li><a href="#deficiencias">Deficiências em Geral</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="surdez">
-        <h2>Surdez</h2>
-        <p>A surdez é uma deficiência auditiva que pode variar de leve a profunda. Algumas pessoas podem ter dificuldade para ouvir certos sons ou podem não ouvir nada. Tecnologias como aparelhos auditivos e implantes cocleares podem ajudar.</p>
+        <aside class="note" aria-label="Observação importante">
+          <p><strong>Nota:</strong> As necessidades são individuais. Utilize avaliações pedagógicas,
+          laudos e a escuta da família/estudante para personalizar as estratégias.</p>
+        </aside>
+      </div>
     </section>
 
-    <section id="tea">
-        <h2>Transtorno do Espectro Autista (TEA)</h2>
-        <p>O TEA é um transtorno do neurodesenvolvimento que afeta a comunicação e o comportamento. As pessoas com TEA podem ter diferentes graus de habilidade, com algumas apresentando talentos excepcionais.</p>
+    <!-- NOVA SEÇÃO COM O VÍDEO -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2>Vídeo sobre Inclusão</h2>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/adSagAgLqV0" 
+            title="Vídeo sobre Inclusão"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </section>
 
-    <section id="deficiencias">
-        <h2>Deficiências em Geral</h2>
-        <p>Deficiência é uma condição que pode afetar o corpo ou a mente de uma pessoa, limitando algumas de suas habilidades. É importante que as pessoas com deficiência tenham acessibilidade e oportunidades iguais para participar da sociedade.</p>
+    <section id="recursos" class="section alt">
+      <div class="container">
+        <h2>Recursos práticos</h2>
+        <ul class="resource-list" role="list">
+          <li>Planejamento Universal para a Aprendizagem (PUA/UDL) para desenhar aulas flexíveis.</li>
+          <li>PEI: metas claras, acompanhamento e evidências de progresso.</li>
+          <li>Checklists de acessibilidade: linguagem, tempo, espaço, materiais e avaliação.</li>
+          <li>Parcerias: AEE, intérpretes, terapeutas, família e equipe gestora.</li>
+        </ul>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Inclusão para Todos. Todos os direitos reservados.</p>
-    </footer>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano"></span> Inclusão na Escola e na Sociedade • Conteúdo educativo</p>
+    </div>
+  </footer>
+
+  <script>
+    // Alternância do menu móvel com acessibilidade
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+    // Ano automático no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
